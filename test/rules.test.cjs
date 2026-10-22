@@ -1,0 +1,17 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {calc,tier,weights}=require('../dist/engine.js');
+const base=()=>({scores:{B:4,A:4,N:4,T:4,H:2.5,E:4},revenue:{low:600000,high:600000},conditions:{problem:true,fit:true,external:true,next:true,commercial:true,conflict:true},blocker:null});
+test('weights sum to 100',()=>assert.equal(Object.values(weights).reduce((a,b)=>a+b),100));
+test('new relationship remains eligible using the explicit neutral rule',()=>{let r=calc(base());assert.equal(r.ql,78.5);assert.equal(r.pl,79.1);assert.equal(r.coverage,100);assert.equal(r.readiness,'Ready')});
+test('missing authority retains its uncertainty and blocks Ready',()=>{let c=base();c.scores={B:4,A:null,N:4,T:3,H:5,E:3};c.conditions.commercial=null;let r=calc(c);assert.equal(r.ql,60);assert.equal(r.qu,80);assert.equal(r.coverage,80);assert.equal(r.pl,68);assert.equal(r.pu,80);assert.equal(r.priority,'Medium–High');assert.equal(r.readiness,'More evidence needed');assert.equal(c.scores.A,null)});
+test('missing revenue has no tier or numerical score',()=>{let c=base();c.revenue=null;let r=calc(c);assert.equal(r.rt,null);assert.equal(r.rl,0);assert.equal(r.ru,100);assert.equal(r.priority,'Pending confirmation');assert.equal(c.revenue,null)});
+test('known zero budget feasibility is not missing',()=>{let c=base();c.scores.B=0;let r=calc(c);assert.equal(r.coverage,100);assert.equal(r.ql,r.qu);assert.notEqual(r.readiness,'Ready')});
+test('confirmed blocker overrides a high commercial score',()=>{let c=base();c.scores={B:5,A:5,N:4,T:5,H:5,E:3};c.revenue={low:1200000,high:1500000};c.conditions.external=false;c.blocker='NO_EXTERNAL_SUPPORT';let r=calc(c);assert.equal(r.ql,91);assert.equal(r.pl,94.6);assert.equal(r.readiness,'Not ready')});
+test('all pending produces intervals rather than an observed zero',()=>{let c=base();c.scores={B:null,A:null,N:null,T:null,H:null,E:null};c.revenue=null;c.conditions.problem=null;let r=calc(c);assert.equal(r.ql,0);assert.equal(r.qu,100);assert.equal(r.coverage,0);assert.equal(r.pl,0);assert.equal(r.pu,100);assert.equal(r.readiness,'More evidence needed')});
+test('income tiers include exact lower boundaries',()=>{assert.equal(tier(99999),2);assert.equal(tier(100000),3);assert.equal(tier(500000),4);assert.equal(tier(1000000),5)});
+test('cross-tier revenue estimate preserves R and P ranges',()=>{let c=base();c.revenue={low:400000,high:700000};let r=calc(c);assert.equal(r.rl,60);assert.equal(r.ru,80);assert.equal(r.rt,null);assert.equal(r.pu-r.pl,8)});
+test('budget 3 to 4 adds five readiness and three priority points',()=>{let c=base();c.scores.B=3;let before=calc(c);c.scores.B=4;let after=calc(c);assert.equal(after.ql-before.ql,5);assert.ok(Math.abs(after.pl-before.pl-3)<1e-9)});
+test('pending next step prevents Ready regardless of score',()=>{let c=base();c.conditions.next=null;assert.equal(calc(c).readiness,'More evidence needed')});
+test('a score high enough overall cannot bypass Need floor',()=>{let c=base();c.scores={B:5,A:5,N:1,T:5,H:5,E:5};assert.equal(calc(c).ql,80);assert.notEqual(calc(c).readiness,'Ready')});
+test('fully assessed Cedar Bay baseline is 69, not 70',()=>{let c=base();c.scores={B:3,A:4,N:4,T:3,H:3,E:3};assert.equal(calc(c).ql,69);c.scores.B=4;assert.equal(calc(c).ql,74);assert.equal(calc(c).readiness,'Ready')});

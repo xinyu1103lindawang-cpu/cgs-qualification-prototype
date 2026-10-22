@@ -1,0 +1,85 @@
+{
+  "weights": {
+    "B": 25,
+    "A": 20,
+    "N": 25,
+    "T": 15,
+    "H": 5,
+    "E": 10
+  },
+  "labels": {
+    "B": "Budget",
+    "A": "Authority",
+    "N": "Need",
+    "T": "Timeline",
+    "H": "History",
+    "E": "Engagement"
+  },
+  "anchors": {
+    "B": [
+      "Confirmed no viable funding path",
+      "Interest, but no credible funding path identified",
+      "Possible funding source identified",
+      "Funding source and approval process understood; approval pending",
+      "Budget approved and covers the initial scope",
+      "Funding, scope and spending authority confirmed"
+    ],
+    "A": [
+      "Confirmed no viable decision-access path",
+      "Limited influence; no introduction path",
+      "Willing to sponsor or introduce; path not established",
+      "Sponsor and decision process identified",
+      "Key decision-maker involved",
+      "Final decision-maker and procurement path confirmed"
+    ],
+    "N": [
+      "No relevant need or confirmed service mismatch",
+      "General interest without a specific problem",
+      "Specific problem; impact or fit needs validation",
+      "Specific problem, business impact and initial CGS fit",
+      "Impact, objectives and support scope clear",
+      "Need, success measures and priority jointly confirmed"
+    ],
+    "T": [
+      "Project cancelled or confirmed no action plan",
+      "Long-term interest without a trigger",
+      "Action window or business trigger identified",
+      "Target date and milestones identified",
+      "Timeline, dependencies and plan clear",
+      "Near-term evaluation and decision plan agreed"
+    ],
+    "H": [
+      "Material, relevant unresolved relationship issue",
+      "Historical issues partially resolved",
+      "Limited relevance or mixed experience",
+      "Positive previous collaboration",
+      "Relevant successful project and ongoing relationship",
+      "Repeated relevant success and explicit endorsement"
+    ],
+    "E": [
+      "Client declined further progress",
+      "Courtesy reply or passive receipt",
+      "Substantive discussion and openness to next actions",
+      "One useful follow-up action completed",
+      "Consistent information-sharing or coordination",
+      "Multiple stakeholders actively advancing the opportunity"
+    ]
+  },
+  "conditionLabels": {
+    "problem": "Specific client problem",
+    "fit": "CGS service fit",
+    "external": "Openness to external support",
+    "next": "Agreed next step",
+    "commercial": "Funding and decision-access path",
+    "conflict": "Material evidence conflicts resolved"
+  },
+  "reasons": {
+    "NO_EXTERNAL_SUPPORT": "Not considering external support",
+    "SERVICE_MISMATCH": "Need does not fit CGS services",
+    "FUNDING_UNAVAILABLE": "No viable funding path",
+    "PROJECT_DEFERRED": "Project deferred",
+    "PROJECT_CANCELLED": "Project cancelled",
+    "NO_DECISION_ACCESS": "No viable decision-access path",
+    "CLIENT_DECLINED": "Client declined further progress"
+  }
+}

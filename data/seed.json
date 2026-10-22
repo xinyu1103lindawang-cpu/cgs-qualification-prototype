@@ -1,0 +1,938 @@
+{
+  "schema": 1,
+  "today": "2026-10-20",
+  "cases": [
+    {
+      "id": "meridian",
+      "company": "Meridian Industries",
+      "project": "Finance transformation",
+      "contact": "Emma Chen",
+      "role": "VP Finance",
+      "owner": "Alex Morgan",
+      "scores": {
+        "B": 4,
+        "A": null,
+        "N": 4,
+        "T": 3,
+        "H": 5,
+        "E": 3
+      },
+      "revenue": {
+        "low": 600000,
+        "high": 800000
+      },
+      "problem": "Month-end reporting relies on manual reconciliations across four business units. The finance team wants to reduce reporting delays before its next operating-model review.",
+      "stage": "Active",
+      "industry": "Manufacturing",
+      "conditions": {
+        "problem": true,
+        "fit": true,
+        "external": true,
+        "next": true,
+        "commercial": null,
+        "conflict": true
+      },
+      "blocker": null,
+      "lastProgress": "2026-10-14",
+      "lastReply": "2026-10-14",
+      "tasks": [
+        {
+          "id": "m1",
+          "title": "Confirm the decision-making group",
+          "side": "CGS",
+          "assignee": "Alex Morgan",
+          "due": "2026-10-21",
+          "status": "Open"
+        },
+        {
+          "id": "m2",
+          "title": "Share a sample reporting workflow",
+          "side": "Client",
+          "assignee": "Emma Chen",
+          "due": "2026-10-20",
+          "status": "Open"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "meridian-B",
+          "dimension": "B",
+          "title": "Budget evidence",
+          "quote": "Our project budget is approved and covers the initial consulting scope.",
+          "interpretation": "Budget approved and covers the initial scope",
+          "source": "Discovery notes · Emma Chen",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "meridian-N",
+          "dimension": "N",
+          "title": "Need evidence",
+          "quote": "Month-end reporting relies on manual reconciliations across four business units. The finance team wants to reduce reporting delays before its next operating-model review.",
+          "interpretation": "Impact, objectives and support scope clear",
+          "source": "Discovery notes · Emma Chen",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "meridian-T",
+          "dimension": "T",
+          "title": "Timeline evidence",
+          "quote": "We have identified an action window and the target milestones.",
+          "interpretation": "Target date and milestones identified",
+          "source": "Discovery notes · Emma Chen",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        },
+        {
+          "id": "meridian-H",
+          "dimension": "H",
+          "title": "History evidence",
+          "quote": "CGS has delivered several successful projects in this area. The client explicitly endorsed the previous work.",
+          "interpretation": "Repeated relevant success and explicit endorsement",
+          "source": "Relationship record",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 5,
+          "origin": "Sample data"
+        },
+        {
+          "id": "meridian-E",
+          "dimension": "E",
+          "title": "Engagement evidence",
+          "quote": "We completed the agreed follow-up action and sent the requested background information.",
+          "interpretation": "One useful follow-up action completed",
+          "source": "Discovery notes · Emma Chen",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-14",
+          "title": "Assessment reviewed",
+          "detail": "Consultant confirmed the existing evidence and recorded the next action."
+        },
+        {
+          "date": "2026-10-14",
+          "title": "Client reply received",
+          "detail": "Case moved to Active under CGS policy."
+        }
+      ],
+      "versions": [
+        {
+          "date": "2026-10-14",
+          "title": "Baseline assessment",
+          "detail": "Evidence confirmed by the case owner. Rule set v1.0.",
+          "after": {
+            "ql": 60,
+            "qu": 80,
+            "coverage": 80,
+            "rl": 80,
+            "ru": 80,
+            "rt": 4,
+            "pl": 68,
+            "pu": 80,
+            "readiness": "More evidence needed",
+            "priority": "Medium–High"
+          }
+        }
+      ],
+      "approval": null,
+      "revision": 1,
+      "sample": true,
+      "analysisRuns": []
+    },
+    {
+      "id": "northstar",
+      "company": "Northstar Health",
+      "project": "Operating model redesign",
+      "contact": "James Walker",
+      "role": "COO",
+      "owner": "Alex Morgan",
+      "scores": {
+        "B": 4,
+        "A": 4,
+        "N": 4,
+        "T": 4,
+        "H": 2.5,
+        "E": 4
+      },
+      "revenue": {
+        "low": 600000,
+        "high": 600000
+      },
+      "problem": "Regional teams use inconsistent operating processes. Leadership wants a common service model and agreed success measures before the Q1 planning cycle.",
+      "stage": "Active",
+      "industry": "Healthcare services",
+      "conditions": {
+        "problem": true,
+        "fit": true,
+        "external": true,
+        "next": true,
+        "commercial": true,
+        "conflict": true
+      },
+      "blocker": null,
+      "lastProgress": "2026-10-14",
+      "lastReply": "2026-10-14",
+      "tasks": [
+        {
+          "id": "n1",
+          "title": "Submit qualification for approval",
+          "side": "CGS",
+          "assignee": "Alex Morgan",
+          "due": "2026-10-20",
+          "status": "Open"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "northstar-B",
+          "dimension": "B",
+          "title": "Budget evidence",
+          "quote": "Our project budget is approved and covers the initial consulting scope.",
+          "interpretation": "Budget approved and covers the initial scope",
+          "source": "Discovery notes · James Walker",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "northstar-A",
+          "dimension": "A",
+          "title": "Authority evidence",
+          "quote": "Our key decision-maker is participating in the project discussion.",
+          "interpretation": "Key decision-maker involved",
+          "source": "Discovery notes · James Walker",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "northstar-N",
+          "dimension": "N",
+          "title": "Need evidence",
+          "quote": "Regional teams use inconsistent operating processes. Leadership wants a common service model and agreed success measures before the Q1 planning cycle.",
+          "interpretation": "Impact, objectives and support scope clear",
+          "source": "Discovery notes · James Walker",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "northstar-T",
+          "dimension": "T",
+          "title": "Timeline evidence",
+          "quote": "The project timeline and dependencies are agreed.",
+          "interpretation": "Timeline, dependencies and plan clear",
+          "source": "Discovery notes · James Walker",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "northstar-H",
+          "dimension": "H",
+          "title": "History evidence",
+          "quote": "The relationship record confirms this would be our first project together.",
+          "interpretation": "No previous collaboration. The neutral rule applies.",
+          "source": "Relationship record",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 2.5,
+          "origin": "Sample data"
+        },
+        {
+          "id": "northstar-E",
+          "dimension": "E",
+          "title": "Engagement evidence",
+          "quote": "We have shared the working materials and coordinated the relevant stakeholders.",
+          "interpretation": "Consistent information-sharing or coordination",
+          "source": "Discovery notes · James Walker",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-14",
+          "title": "Assessment reviewed",
+          "detail": "Consultant confirmed the existing evidence and recorded the next action."
+        },
+        {
+          "date": "2026-10-14",
+          "title": "Client reply received",
+          "detail": "Case moved to Active under CGS policy."
+        }
+      ],
+      "versions": [
+        {
+          "date": "2026-10-14",
+          "title": "Baseline assessment",
+          "detail": "Evidence confirmed by the case owner. Rule set v1.0.",
+          "after": {
+            "ql": 78.5,
+            "qu": 78.5,
+            "coverage": 100,
+            "rl": 80,
+            "ru": 80,
+            "rt": 4,
+            "pl": 79.1,
+            "pu": 79.1,
+            "readiness": "Ready",
+            "priority": "High"
+          }
+        }
+      ],
+      "approval": null,
+      "revision": 1,
+      "sample": true,
+      "analysisRuns": []
+    },
+    {
+      "id": "atlas",
+      "company": "Atlas Financial",
+      "project": "Growth strategy review",
+      "contact": "Sofia Reyes",
+      "role": "Strategy Director",
+      "owner": "Sarah Patel",
+      "scores": {
+        "B": 5,
+        "A": 5,
+        "N": 4,
+        "T": 5,
+        "H": 5,
+        "E": 3
+      },
+      "revenue": {
+        "low": 1200000,
+        "high": 1500000
+      },
+      "problem": "The strategy team is evaluating expansion options and shared a clear project scope. They currently plan to use internal resources only.",
+      "stage": "Active",
+      "industry": "Financial services",
+      "conditions": {
+        "problem": true,
+        "fit": true,
+        "external": false,
+        "next": true,
+        "commercial": true,
+        "conflict": true
+      },
+      "blocker": "NO_EXTERNAL_SUPPORT",
+      "lastProgress": "2026-10-14",
+      "lastReply": "2026-10-14",
+      "tasks": [
+        {
+          "id": "a1",
+          "title": "Record a future review trigger",
+          "side": "CGS",
+          "assignee": "Sarah Patel",
+          "due": "2026-10-22",
+          "status": "Open"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "atlas-B",
+          "dimension": "B",
+          "title": "Budget evidence",
+          "quote": "Our project budget is approved and covers the initial consulting scope. Spending authority and the final scope are also confirmed.",
+          "interpretation": "Funding, scope and spending authority confirmed",
+          "source": "Discovery notes · Sofia Reyes",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 5,
+          "origin": "Sample data"
+        },
+        {
+          "id": "atlas-A",
+          "dimension": "A",
+          "title": "Authority evidence",
+          "quote": "Our key decision-maker is participating in the project discussion. The final approver and procurement path are confirmed.",
+          "interpretation": "Final decision-maker and procurement path confirmed",
+          "source": "Discovery notes · Sofia Reyes",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 5,
+          "origin": "Sample data"
+        },
+        {
+          "id": "atlas-N",
+          "dimension": "N",
+          "title": "Need evidence",
+          "quote": "The strategy team is evaluating expansion options and shared a clear project scope. They currently plan to use internal resources only.",
+          "interpretation": "Impact, objectives and support scope clear",
+          "source": "Discovery notes · Sofia Reyes",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "atlas-T",
+          "dimension": "T",
+          "title": "Timeline evidence",
+          "quote": "The project timeline and dependencies are agreed. We have confirmed evaluation and decision meetings.",
+          "interpretation": "Near-term evaluation and decision plan agreed",
+          "source": "Discovery notes · Sofia Reyes",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 5,
+          "origin": "Sample data"
+        },
+        {
+          "id": "atlas-H",
+          "dimension": "H",
+          "title": "History evidence",
+          "quote": "CGS has delivered several successful projects in this area. The client explicitly endorsed the previous work.",
+          "interpretation": "Repeated relevant success and explicit endorsement",
+          "source": "Relationship record",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 5,
+          "origin": "Sample data"
+        },
+        {
+          "id": "atlas-E",
+          "dimension": "E",
+          "title": "Engagement evidence",
+          "quote": "We completed the agreed follow-up action and sent the requested background information.",
+          "interpretation": "One useful follow-up action completed",
+          "source": "Discovery notes · Sofia Reyes",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-14",
+          "title": "Assessment reviewed",
+          "detail": "Consultant confirmed the existing evidence and recorded the next action."
+        },
+        {
+          "date": "2026-10-14",
+          "title": "Client reply received",
+          "detail": "Case moved to Active under CGS policy."
+        }
+      ],
+      "versions": [
+        {
+          "date": "2026-10-14",
+          "title": "Baseline assessment",
+          "detail": "Evidence confirmed by the case owner. Rule set v1.0.",
+          "after": {
+            "ql": 91,
+            "qu": 91,
+            "coverage": 100,
+            "rl": 100,
+            "ru": 100,
+            "rt": 5,
+            "pl": 94.6,
+            "pu": 94.6,
+            "readiness": "Not ready",
+            "priority": "High"
+          }
+        }
+      ],
+      "approval": null,
+      "revision": 1,
+      "sample": true,
+      "analysisRuns": []
+    },
+    {
+      "id": "alder",
+      "company": "Alder Biotech",
+      "project": "Initial discovery",
+      "contact": "Oliver Kim",
+      "role": "Business Development Lead",
+      "owner": "Daniel Brooks",
+      "scores": {
+        "B": null,
+        "A": null,
+        "N": null,
+        "T": null,
+        "H": null,
+        "E": 1
+      },
+      "revenue": null,
+      "problem": "Pending confirmation. The client replied to the introduction but has not yet described a business problem.",
+      "stage": "Active",
+      "industry": "Life sciences",
+      "conditions": {
+        "problem": null,
+        "fit": null,
+        "external": null,
+        "next": null,
+        "commercial": null,
+        "conflict": true
+      },
+      "blocker": null,
+      "lastProgress": "2026-10-02",
+      "lastReply": "2026-10-02",
+      "tasks": [
+        {
+          "id": "b1",
+          "title": "Explore the client’s current priorities",
+          "side": "CGS",
+          "assignee": "Daniel Brooks",
+          "due": "2026-10-15",
+          "status": "Open"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "alder-E",
+          "dimension": "E",
+          "title": "Engagement evidence",
+          "quote": "Thank you for sending this through. I have received the introduction.",
+          "interpretation": "Courtesy reply or passive receipt",
+          "source": "Discovery notes · Oliver Kim",
+          "date": "2026-10-02",
+          "status": "Confirmed",
+          "score": 1,
+          "origin": "Sample data"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-14",
+          "title": "Assessment reviewed",
+          "detail": "Consultant confirmed the existing evidence and recorded the next action."
+        },
+        {
+          "date": "2026-10-02",
+          "title": "Client reply received",
+          "detail": "Case moved to Active under CGS policy."
+        }
+      ],
+      "versions": [
+        {
+          "date": "2026-10-14",
+          "title": "Baseline assessment",
+          "detail": "Evidence confirmed by the case owner. Rule set v1.0.",
+          "after": {
+            "ql": 2,
+            "qu": 92,
+            "coverage": 10,
+            "rl": 0,
+            "ru": 100,
+            "rt": null,
+            "pl": 1.2,
+            "pu": 95.19999999999999,
+            "readiness": "More evidence needed",
+            "priority": "Pending confirmation"
+          }
+        }
+      ],
+      "approval": null,
+      "revision": 1,
+      "sample": true,
+      "analysisRuns": []
+    },
+    {
+      "id": "cedar",
+      "company": "Cedar Bay Logistics",
+      "project": "Supply chain assessment",
+      "contact": "Maya Thompson",
+      "role": "Operations Director",
+      "owner": "Sarah Patel",
+      "scores": {
+        "B": 3,
+        "A": 4,
+        "N": 4,
+        "T": 3,
+        "H": 3,
+        "E": 3
+      },
+      "revenue": {
+        "low": 500000,
+        "high": 700000
+      },
+      "problem": "Delivery planning varies across locations. The client wants to identify process gaps and define an improvement roadmap before its next seasonal peak.",
+      "stage": "Active",
+      "industry": "Logistics",
+      "conditions": {
+        "problem": true,
+        "fit": true,
+        "external": true,
+        "next": true,
+        "commercial": true,
+        "conflict": true
+      },
+      "blocker": null,
+      "lastProgress": "2026-10-01",
+      "lastReply": "2026-10-14",
+      "tasks": [
+        {
+          "id": "c1",
+          "title": "Client to share current process maps",
+          "side": "Client",
+          "assignee": "Maya Thompson",
+          "due": "2026-10-16",
+          "status": "Open"
+        },
+        {
+          "id": "c2",
+          "title": "Review the approved budget update",
+          "side": "CGS",
+          "assignee": "Sarah Patel",
+          "due": "2026-10-20",
+          "status": "Open"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "cedar-B",
+          "dimension": "B",
+          "title": "Budget evidence",
+          "quote": "We have identified a funding source and understand the approval process. Formal approval is still pending.",
+          "interpretation": "Funding source and approval process understood; approval pending",
+          "source": "Discovery notes · Maya Thompson",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        },
+        {
+          "id": "cedar-A",
+          "dimension": "A",
+          "title": "Authority evidence",
+          "quote": "Our key decision-maker is participating in the project discussion.",
+          "interpretation": "Key decision-maker involved",
+          "source": "Discovery notes · Maya Thompson",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "cedar-N",
+          "dimension": "N",
+          "title": "Need evidence",
+          "quote": "Delivery planning varies across locations. The client wants to identify process gaps and define an improvement roadmap before its next seasonal peak.",
+          "interpretation": "Impact, objectives and support scope clear",
+          "source": "Discovery notes · Maya Thompson",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 4,
+          "origin": "Sample data"
+        },
+        {
+          "id": "cedar-T",
+          "dimension": "T",
+          "title": "Timeline evidence",
+          "quote": "We have identified an action window and the target milestones.",
+          "interpretation": "Target date and milestones identified",
+          "source": "Discovery notes · Maya Thompson",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        },
+        {
+          "id": "cedar-H",
+          "dimension": "H",
+          "title": "History evidence",
+          "quote": "The previous engagement received positive feedback and the relationship has continued.",
+          "interpretation": "Positive previous collaboration",
+          "source": "Relationship record",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        },
+        {
+          "id": "cedar-E",
+          "dimension": "E",
+          "title": "Engagement evidence",
+          "quote": "We completed the agreed follow-up action and sent the requested background information.",
+          "interpretation": "One useful follow-up action completed",
+          "source": "Discovery notes · Maya Thompson",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-14",
+          "title": "Assessment reviewed",
+          "detail": "Consultant confirmed the existing evidence and recorded the next action."
+        },
+        {
+          "date": "2026-10-14",
+          "title": "Client reply received",
+          "detail": "Case moved to Active under CGS policy."
+        }
+      ],
+      "versions": [
+        {
+          "date": "2026-10-14",
+          "title": "Baseline assessment",
+          "detail": "Evidence confirmed by the case owner. Rule set v1.0.",
+          "after": {
+            "ql": 69,
+            "qu": 69,
+            "coverage": 100,
+            "rl": 80,
+            "ru": 80,
+            "rt": 4,
+            "pl": 73.4,
+            "pu": 73.4,
+            "readiness": "More evidence needed",
+            "priority": "Medium"
+          }
+        }
+      ],
+      "approval": null,
+      "revision": 1,
+      "sample": true,
+      "analysisRuns": []
+    },
+    {
+      "id": "harbour",
+      "company": "Harbour Retail",
+      "project": "Customer experience strategy",
+      "contact": "Liam Davis",
+      "role": "Customer Experience Lead",
+      "owner": "Daniel Brooks",
+      "scores": {
+        "B": 3,
+        "A": 3,
+        "N": 3,
+        "T": 2,
+        "H": 3,
+        "E": 2
+      },
+      "revenue": {
+        "low": 150000,
+        "high": 250000
+      },
+      "problem": "Customer feedback is collected in separate systems. The client is considering an assessment of the customer journey but has deferred project activity to next year.",
+      "stage": "Active",
+      "industry": "Retail",
+      "conditions": {
+        "problem": true,
+        "fit": true,
+        "external": true,
+        "next": null,
+        "commercial": true,
+        "conflict": true
+      },
+      "blocker": "PROJECT_DEFERRED",
+      "lastProgress": "2026-10-10",
+      "lastReply": "2026-10-14",
+      "tasks": [
+        {
+          "id": "h1",
+          "title": "Revisit after annual planning",
+          "side": "CGS",
+          "assignee": "Daniel Brooks",
+          "due": "2027-01-12",
+          "status": "Open"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "harbour-B",
+          "dimension": "B",
+          "title": "Budget evidence",
+          "quote": "We have identified a funding source and understand the approval process. Formal approval is still pending.",
+          "interpretation": "Funding source and approval process understood; approval pending",
+          "source": "Discovery notes · Liam Davis",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        },
+        {
+          "id": "harbour-A",
+          "dimension": "A",
+          "title": "Authority evidence",
+          "quote": "I can sponsor this internally. The decision process is clear and the approvers are identified.",
+          "interpretation": "Sponsor and decision process identified",
+          "source": "Discovery notes · Liam Davis",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        },
+        {
+          "id": "harbour-N",
+          "dimension": "N",
+          "title": "Need evidence",
+          "quote": "Customer feedback is collected in separate systems. The client is considering an assessment of the customer journey but has deferred project activity to next year.",
+          "interpretation": "Specific problem, business impact and initial CGS fit",
+          "source": "Discovery notes · Liam Davis",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        },
+        {
+          "id": "harbour-T",
+          "dimension": "T",
+          "title": "Timeline evidence",
+          "quote": "We have identified an action window and the target milestones.",
+          "interpretation": "Action window or business trigger identified",
+          "source": "Discovery notes · Liam Davis",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 2,
+          "origin": "Sample data"
+        },
+        {
+          "id": "harbour-H",
+          "dimension": "H",
+          "title": "History evidence",
+          "quote": "The previous engagement received positive feedback and the relationship has continued.",
+          "interpretation": "Positive previous collaboration",
+          "source": "Relationship record",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 3,
+          "origin": "Sample data"
+        },
+        {
+          "id": "harbour-E",
+          "dimension": "E",
+          "title": "Engagement evidence",
+          "quote": "We are open to discussing the problem and possible next steps.",
+          "interpretation": "Substantive discussion and openness to next actions",
+          "source": "Discovery notes · Liam Davis",
+          "date": "2026-10-14",
+          "status": "Confirmed",
+          "score": 2,
+          "origin": "Sample data"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-14",
+          "title": "Assessment reviewed",
+          "detail": "Consultant confirmed the existing evidence and recorded the next action."
+        },
+        {
+          "date": "2026-10-14",
+          "title": "Client reply received",
+          "detail": "Case moved to Active under CGS policy."
+        }
+      ],
+      "versions": [
+        {
+          "date": "2026-10-14",
+          "title": "Baseline assessment",
+          "detail": "Evidence confirmed by the case owner. Rule set v1.0.",
+          "after": {
+            "ql": 55,
+            "qu": 55,
+            "coverage": 100,
+            "rl": 60,
+            "ru": 60,
+            "rt": 3,
+            "pl": 57,
+            "pu": 57,
+            "readiness": "Not ready",
+            "priority": "Medium"
+          }
+        }
+      ],
+      "approval": null,
+      "revision": 1,
+      "sample": true,
+      "analysisRuns": []
+    },
+    {
+      "id": "summit",
+      "company": "Summit Energy",
+      "project": "Outreach preparation",
+      "contact": "Nina Wilson",
+      "role": "Transformation Lead",
+      "owner": "Alex Morgan",
+      "scores": {
+        "B": null,
+        "A": null,
+        "N": null,
+        "T": null,
+        "H": null,
+        "E": null
+      },
+      "revenue": null,
+      "problem": "Pending confirmation. Prepare a relevant introduction based on the client’s transformation remit.",
+      "stage": "Contacted",
+      "industry": "Energy",
+      "conditions": {
+        "problem": null,
+        "fit": null,
+        "external": null,
+        "next": null,
+        "commercial": null,
+        "conflict": true
+      },
+      "blocker": null,
+      "lastProgress": "2026-10-18",
+      "lastReply": "2026-10-14",
+      "tasks": [
+        {
+          "id": "s1",
+          "title": "Review the outreach draft",
+          "side": "CGS",
+          "assignee": "Alex Morgan",
+          "due": "2026-10-20",
+          "status": "Open"
+        }
+      ],
+      "evidence": [],
+      "events": [
+        {
+          "date": "2026-10-18",
+          "title": "Outreach prepared",
+          "detail": "A consultant is reviewing the introductory message. No client reply recorded."
+        }
+      ],
+      "versions": [
+        {
+          "date": "2026-10-14",
+          "title": "Baseline assessment",
+          "detail": "Evidence confirmed by the case owner. Rule set v1.0.",
+          "after": {
+            "ql": 0,
+            "qu": 100,
+            "coverage": 0,
+            "rl": 0,
+            "ru": 100,
+            "rt": null,
+            "pl": 0,
+            "pu": 100,
+            "readiness": "More evidence needed",
+            "priority": "Pending confirmation"
+          }
+        }
+      ],
+      "approval": null,
+      "revision": 1,
+      "sample": true,
+      "analysisRuns": []
+    }
+  ],
+  "snoozes": {}
+}
